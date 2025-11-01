@@ -43,13 +43,13 @@
             button9 = new Button();
             btnEqualizer = new Button();
             panelSideMenu = new Panel();
+            Help = new Button();
             panelToolsSubMenu = new Panel();
             button12 = new Button();
             button13 = new Button();
             button14 = new Button();
             button15 = new Button();
             btnTools = new Button();
-            Help = new Button();
             panelMediaSubmenu.SuspendLayout();
             panelPlaylistSubMenu.SuspendLayout();
             panelSideMenu.SuspendLayout();
@@ -166,6 +166,7 @@
             button1.TabIndex = 3;
             button1.Text = "Playlist Managentment";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // panelPlaylistSubMenu
             // 
@@ -193,6 +194,7 @@
             button6.TabIndex = 3;
             button6.Text = "button6";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
@@ -207,6 +209,7 @@
             button7.TabIndex = 2;
             button7.Text = "button7";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // button8
             // 
@@ -221,6 +224,7 @@
             button8.TabIndex = 1;
             button8.Text = "button8";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // button9
             // 
@@ -235,6 +239,7 @@
             button9.TabIndex = 0;
             button9.Text = "button9";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
             // btnEqualizer
             // 
@@ -267,6 +272,20 @@
             panelSideMenu.Name = "panelSideMenu";
             panelSideMenu.Size = new Size(250, 749);
             panelSideMenu.TabIndex = 0;
+            // 
+            // Help
+            // 
+            Help.Dock = DockStyle.Top;
+            Help.FlatAppearance.BorderSize = 0;
+            Help.FlatStyle = FlatStyle.Flat;
+            Help.ForeColor = Color.LightGray;
+            Help.Location = new Point(0, 705);
+            Help.Name = "Help";
+            Help.Padding = new Padding(0, 0, 185, 0);
+            Help.Size = new Size(250, 45);
+            Help.TabIndex = 8;
+            Help.Text = "Help";
+            Help.UseVisualStyleBackColor = true;
             // 
             // panelToolsSubMenu
             // 
@@ -351,20 +370,6 @@
             btnTools.Text = "Tools";
             btnTools.UseVisualStyleBackColor = true;
             btnTools.Click += btnTools_Click;
-            // 
-            // Help
-            // 
-            Help.Dock = DockStyle.Top;
-            Help.FlatAppearance.BorderSize = 0;
-            Help.FlatStyle = FlatStyle.Flat;
-            Help.ForeColor = Color.LightGray;
-            Help.Location = new Point(0, 705);
-            Help.Name = "Help";
-            Help.Padding = new Padding(0, 0, 185, 0);
-            Help.Size = new Size(250, 45);
-            Help.TabIndex = 8;
-            Help.Text = "Help";
-            Help.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 

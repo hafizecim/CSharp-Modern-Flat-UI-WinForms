@@ -77,5 +77,30 @@ namespace CSharp_Modern_Flat_UI_WinForms
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelPlaylistSubMenu);
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
     }
 }
