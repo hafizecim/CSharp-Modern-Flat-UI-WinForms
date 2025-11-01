@@ -127,5 +127,10 @@ namespace CSharp_Modern_Flat_UI_WinForms
         {
             hideSubMenu();
         }
+
+        private void Help_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
     }
 }

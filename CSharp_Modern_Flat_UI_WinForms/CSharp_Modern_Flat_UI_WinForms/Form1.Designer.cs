@@ -287,6 +287,7 @@
             Help.TabIndex = 8;
             Help.Text = "Help";
             Help.UseVisualStyleBackColor = true;
+            Help.Click += Help_Click;
             // 
             // panelToolsSubMenu
             // 
