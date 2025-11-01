@@ -75,7 +75,7 @@ namespace CSharp_Modern_Flat_UI_WinForms
 
         private void btnTools_Click(object sender, EventArgs e)
         {
-
+            showSubMenu(panelToolsSubMenu);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -104,6 +104,26 @@ namespace CSharp_Modern_Flat_UI_WinForms
         }
 
         private void btnEqualizer_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
         {
             hideSubMenu();
         }
