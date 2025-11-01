@@ -402,6 +402,7 @@
             panelChildForm.Name = "panelChildForm";
             panelChildForm.Size = new Size(1120, 649);
             panelChildForm.TabIndex = 2;
+            panelChildForm.Paint += panelChildForm_Paint;
             // 
             // pictureBox1
             // 

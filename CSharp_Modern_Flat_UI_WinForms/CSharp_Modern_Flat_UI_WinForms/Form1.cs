@@ -136,7 +136,7 @@ namespace CSharp_Modern_Flat_UI_WinForms
         private Form activeForm = null;
         private void openChildForm(Form childForm)
         {
-            if(activeForm != null)
+            if (activeForm != null)
                 activeForm.Close();
             activeForm = childForm;
             childForm.TopLevel = false;
@@ -146,6 +146,11 @@ namespace CSharp_Modern_Flat_UI_WinForms
             panelChildForm.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+        }
+
+        private void panelChildForm_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
