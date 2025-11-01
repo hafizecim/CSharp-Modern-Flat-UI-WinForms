@@ -43,16 +43,17 @@
             button9 = new Button();
             btnEqualizer = new Button();
             panelSideMenu = new Panel();
-            panel2 = new Panel();
+            panelToolsSubMenu = new Panel();
             button12 = new Button();
             button13 = new Button();
             button14 = new Button();
             button15 = new Button();
             btnTools = new Button();
+            Help = new Button();
             panelMediaSubmenu.SuspendLayout();
             panelPlaylistSubMenu.SuspendLayout();
             panelSideMenu.SuspendLayout();
-            panel2.SuspendLayout();
+            panelToolsSubMenu.SuspendLayout();
             SuspendLayout();
             // 
             // panelLogo
@@ -60,8 +61,9 @@
             panelLogo.Dock = DockStyle.Top;
             panelLogo.Location = new Point(0, 0);
             panelLogo.Name = "panelLogo";
-            panelLogo.Size = new Size(250, 100);
+            panelLogo.Size = new Size(250, 30);
             panelLogo.TabIndex = 0;
+            panelLogo.Paint += panelLogo_Paint;
             // 
             // btnMedia
             // 
@@ -69,13 +71,14 @@
             btnMedia.FlatAppearance.BorderSize = 0;
             btnMedia.FlatStyle = FlatStyle.Flat;
             btnMedia.ForeColor = Color.LightGray;
-            btnMedia.Location = new Point(0, 100);
+            btnMedia.Location = new Point(0, 30);
             btnMedia.Name = "btnMedia";
             btnMedia.Padding = new Padding(0, 0, 185, 0);
             btnMedia.Size = new Size(250, 45);
             btnMedia.TabIndex = 1;
             btnMedia.Text = "Media";
             btnMedia.UseVisualStyleBackColor = true;
+            btnMedia.Click += btnMedia_Click;
             // 
             // panelMediaSubmenu
             // 
@@ -85,7 +88,7 @@
             panelMediaSubmenu.Controls.Add(button3);
             panelMediaSubmenu.Controls.Add(button2);
             panelMediaSubmenu.Dock = DockStyle.Top;
-            panelMediaSubmenu.Location = new Point(0, 145);
+            panelMediaSubmenu.Location = new Point(0, 75);
             panelMediaSubmenu.Name = "panelMediaSubmenu";
             panelMediaSubmenu.Size = new Size(250, 165);
             panelMediaSubmenu.TabIndex = 2;
@@ -103,6 +106,7 @@
             button5.TabIndex = 3;
             button5.Text = "button5";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button4
             // 
@@ -117,6 +121,7 @@
             button4.TabIndex = 2;
             button4.Text = "button4";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -131,6 +136,7 @@
             button3.TabIndex = 1;
             button3.Text = "button3";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
@@ -145,6 +151,7 @@
             button2.TabIndex = 0;
             button2.Text = "button2";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -152,7 +159,7 @@
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
             button1.ForeColor = Color.LightGray;
-            button1.Location = new Point(0, 310);
+            button1.Location = new Point(0, 240);
             button1.Name = "button1";
             button1.Padding = new Padding(0, 0, 90, 0);
             button1.Size = new Size(250, 45);
@@ -168,7 +175,7 @@
             panelPlaylistSubMenu.Controls.Add(button8);
             panelPlaylistSubMenu.Controls.Add(button9);
             panelPlaylistSubMenu.Dock = DockStyle.Top;
-            panelPlaylistSubMenu.Location = new Point(0, 355);
+            panelPlaylistSubMenu.Location = new Point(0, 285);
             panelPlaylistSubMenu.Name = "panelPlaylistSubMenu";
             panelPlaylistSubMenu.Size = new Size(250, 165);
             panelPlaylistSubMenu.TabIndex = 4;
@@ -235,7 +242,7 @@
             btnEqualizer.FlatAppearance.BorderSize = 0;
             btnEqualizer.FlatStyle = FlatStyle.Flat;
             btnEqualizer.ForeColor = Color.LightGray;
-            btnEqualizer.Location = new Point(0, 520);
+            btnEqualizer.Location = new Point(0, 450);
             btnEqualizer.Name = "btnEqualizer";
             btnEqualizer.Padding = new Padding(0, 0, 165, 0);
             btnEqualizer.Size = new Size(250, 45);
@@ -246,7 +253,8 @@
             // panelSideMenu
             // 
             panelSideMenu.BackColor = SystemColors.ActiveCaptionText;
-            panelSideMenu.Controls.Add(panel2);
+            panelSideMenu.Controls.Add(Help);
+            panelSideMenu.Controls.Add(panelToolsSubMenu);
             panelSideMenu.Controls.Add(btnTools);
             panelSideMenu.Controls.Add(btnEqualizer);
             panelSideMenu.Controls.Add(panelPlaylistSubMenu);
@@ -260,18 +268,18 @@
             panelSideMenu.Size = new Size(250, 749);
             panelSideMenu.TabIndex = 0;
             // 
-            // panel2
+            // panelToolsSubMenu
             // 
-            panel2.BackColor = Color.FromArgb(64, 64, 64);
-            panel2.Controls.Add(button12);
-            panel2.Controls.Add(button13);
-            panel2.Controls.Add(button14);
-            panel2.Controls.Add(button15);
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(0, 610);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(250, 165);
-            panel2.TabIndex = 7;
+            panelToolsSubMenu.BackColor = Color.FromArgb(64, 64, 64);
+            panelToolsSubMenu.Controls.Add(button12);
+            panelToolsSubMenu.Controls.Add(button13);
+            panelToolsSubMenu.Controls.Add(button14);
+            panelToolsSubMenu.Controls.Add(button15);
+            panelToolsSubMenu.Dock = DockStyle.Top;
+            panelToolsSubMenu.Location = new Point(0, 540);
+            panelToolsSubMenu.Name = "panelToolsSubMenu";
+            panelToolsSubMenu.Size = new Size(250, 165);
+            panelToolsSubMenu.TabIndex = 7;
             // 
             // button12
             // 
@@ -335,13 +343,28 @@
             btnTools.FlatAppearance.BorderSize = 0;
             btnTools.FlatStyle = FlatStyle.Flat;
             btnTools.ForeColor = Color.LightGray;
-            btnTools.Location = new Point(0, 565);
+            btnTools.Location = new Point(0, 495);
             btnTools.Name = "btnTools";
             btnTools.Padding = new Padding(0, 0, 185, 0);
             btnTools.Size = new Size(250, 45);
             btnTools.TabIndex = 6;
             btnTools.Text = "Tools";
             btnTools.UseVisualStyleBackColor = true;
+            btnTools.Click += btnTools_Click;
+            // 
+            // Help
+            // 
+            Help.Dock = DockStyle.Top;
+            Help.FlatAppearance.BorderSize = 0;
+            Help.FlatStyle = FlatStyle.Flat;
+            Help.ForeColor = Color.LightGray;
+            Help.Location = new Point(0, 705);
+            Help.Name = "Help";
+            Help.Padding = new Padding(0, 0, 185, 0);
+            Help.Size = new Size(250, 45);
+            Help.TabIndex = 8;
+            Help.Text = "Help";
+            Help.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -355,7 +378,7 @@
             panelMediaSubmenu.ResumeLayout(false);
             panelPlaylistSubMenu.ResumeLayout(false);
             panelSideMenu.ResumeLayout(false);
-            panel2.ResumeLayout(false);
+            panelToolsSubMenu.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -376,11 +399,12 @@
         private Button button9;
         private Button btnEqualizer;
         private Panel panelSideMenu;
-        private Panel panel2;
+        private Panel panelToolsSubMenu;
         private Button button12;
         private Button button13;
         private Button button14;
         private Button button15;
         private Button btnTools;
+        private Button Help;
     }
 }
