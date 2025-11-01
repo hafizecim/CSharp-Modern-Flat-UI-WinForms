@@ -50,6 +50,7 @@ namespace CSharp_Modern_Flat_UI_WinForms
 
         private void button2_Click(object sender, EventArgs e)
         {
+            openChildForm(new Form2());
             hideSubMenu();
         }
 
@@ -105,6 +106,7 @@ namespace CSharp_Modern_Flat_UI_WinForms
 
         private void btnEqualizer_Click(object sender, EventArgs e)
         {
+            openChildForm(new  Form3());
             hideSubMenu();
         }
 
