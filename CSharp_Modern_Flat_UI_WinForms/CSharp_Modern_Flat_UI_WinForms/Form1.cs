@@ -29,6 +29,21 @@ namespace CSharp_Modern_Flat_UI_WinForms
                 panel2.Visible = false;
         }
 
+        private void showSubMenu(Panel subMenu)
+        {
+            if (subMenu.Visible == false)
+            {
+                hideSubMenu();
+                subMenu.Visible = true;
+            }
+            else
+            {
+                subMenu.Visible = false;
+            }
+
+        }
+
+
 
 
     }
