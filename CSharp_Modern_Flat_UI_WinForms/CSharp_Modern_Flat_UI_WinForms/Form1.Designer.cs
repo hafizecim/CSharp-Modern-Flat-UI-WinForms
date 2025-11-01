@@ -254,6 +254,7 @@
             btnEqualizer.TabIndex = 5;
             btnEqualizer.Text = "Equalizer";
             btnEqualizer.UseVisualStyleBackColor = true;
+            btnEqualizer.Click += btnEqualizer_Click;
             // 
             // panelSideMenu
             // 
