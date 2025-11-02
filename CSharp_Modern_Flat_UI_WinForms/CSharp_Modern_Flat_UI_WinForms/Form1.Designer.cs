@@ -35,7 +35,7 @@
             button5 = new Button();
             button4 = new Button();
             button3 = new Button();
-            button2 = new Button();
+            btnMediaOpenFiles = new Button();
             button1 = new Button();
             panelPlaylistSubMenu = new Panel();
             button6 = new Button();
@@ -46,7 +46,6 @@
             panelSideMenu = new Panel();
             btnHelp = new Button();
             panelToolsSubMenu = new Panel();
-            button12 = new Button();
             button13 = new Button();
             button14 = new Button();
             button15 = new Button();
@@ -54,6 +53,7 @@
             panelPlayer = new Panel();
             panelChildForm = new Panel();
             pictureBox1 = new PictureBox();
+            btnExit = new Button();
             panelMediaSubmenu.SuspendLayout();
             panelPlaylistSubMenu.SuspendLayout();
             panelSideMenu.SuspendLayout();
@@ -92,7 +92,7 @@
             panelMediaSubmenu.Controls.Add(button5);
             panelMediaSubmenu.Controls.Add(button4);
             panelMediaSubmenu.Controls.Add(button3);
-            panelMediaSubmenu.Controls.Add(button2);
+            panelMediaSubmenu.Controls.Add(btnMediaOpenFiles);
             panelMediaSubmenu.Dock = DockStyle.Top;
             panelMediaSubmenu.Location = new Point(0, 75);
             panelMediaSubmenu.Name = "panelMediaSubmenu";
@@ -107,10 +107,11 @@
             button5.ForeColor = Color.LightGray;
             button5.Location = new Point(0, 120);
             button5.Name = "button5";
-            button5.Padding = new Padding(0, 0, 135, 0);
+            button5.Padding = new Padding(20, 0, 0, 0);
             button5.Size = new Size(233, 40);
             button5.TabIndex = 3;
-            button5.Text = "button5";
+            button5.Text = "Open Recent Media";
+            button5.TextAlign = ContentAlignment.MiddleLeft;
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
             // 
@@ -122,10 +123,11 @@
             button4.ForeColor = Color.LightGray;
             button4.Location = new Point(0, 80);
             button4.Name = "button4";
-            button4.Padding = new Padding(0, 0, 135, 0);
+            button4.Padding = new Padding(20, 0, 0, 0);
             button4.Size = new Size(233, 40);
             button4.TabIndex = 2;
-            button4.Text = "button4";
+            button4.Text = "Open Disk";
+            button4.TextAlign = ContentAlignment.MiddleLeft;
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
@@ -137,27 +139,29 @@
             button3.ForeColor = Color.LightGray;
             button3.Location = new Point(0, 40);
             button3.Name = "button3";
-            button3.Padding = new Padding(0, 0, 135, 0);
+            button3.Padding = new Padding(20, 0, 0, 0);
             button3.Size = new Size(233, 40);
             button3.TabIndex = 1;
-            button3.Text = "button3";
+            button3.Text = "Open Folder";
+            button3.TextAlign = ContentAlignment.MiddleLeft;
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
-            // button2
+            // btnMediaOpenFiles
             // 
-            button2.Dock = DockStyle.Top;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.ForeColor = Color.LightGray;
-            button2.Location = new Point(0, 0);
-            button2.Name = "button2";
-            button2.Padding = new Padding(0, 0, 135, 0);
-            button2.Size = new Size(233, 40);
-            button2.TabIndex = 0;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btnMediaOpenFiles.Dock = DockStyle.Top;
+            btnMediaOpenFiles.FlatAppearance.BorderSize = 0;
+            btnMediaOpenFiles.FlatStyle = FlatStyle.Flat;
+            btnMediaOpenFiles.ForeColor = Color.LightGray;
+            btnMediaOpenFiles.Location = new Point(0, 0);
+            btnMediaOpenFiles.Name = "btnMediaOpenFiles";
+            btnMediaOpenFiles.Padding = new Padding(20, 0, 0, 0);
+            btnMediaOpenFiles.Size = new Size(233, 40);
+            btnMediaOpenFiles.TabIndex = 0;
+            btnMediaOpenFiles.Text = "Open Files";
+            btnMediaOpenFiles.TextAlign = ContentAlignment.MiddleLeft;
+            btnMediaOpenFiles.UseVisualStyleBackColor = true;
+            btnMediaOpenFiles.Click += button2_Click;
             // 
             // button1
             // 
@@ -195,10 +199,11 @@
             button6.ForeColor = Color.LightGray;
             button6.Location = new Point(0, 120);
             button6.Name = "button6";
-            button6.Padding = new Padding(0, 0, 135, 0);
+            button6.Padding = new Padding(20, 0, 0, 0);
             button6.Size = new Size(233, 40);
             button6.TabIndex = 3;
-            button6.Text = "button6";
+            button6.Text = "Export Playlist";
+            button6.TextAlign = ContentAlignment.MiddleLeft;
             button6.UseVisualStyleBackColor = true;
             button6.Click += button6_Click;
             // 
@@ -210,10 +215,11 @@
             button7.ForeColor = Color.LightGray;
             button7.Location = new Point(0, 80);
             button7.Name = "button7";
-            button7.Padding = new Padding(0, 0, 135, 0);
+            button7.Padding = new Padding(20, 0, 0, 0);
             button7.Size = new Size(233, 40);
             button7.TabIndex = 2;
-            button7.Text = "button7";
+            button7.Text = "Import Playlist";
+            button7.TextAlign = ContentAlignment.MiddleLeft;
             button7.UseVisualStyleBackColor = true;
             button7.Click += button7_Click;
             // 
@@ -225,10 +231,11 @@
             button8.ForeColor = Color.LightGray;
             button8.Location = new Point(0, 40);
             button8.Name = "button8";
-            button8.Padding = new Padding(0, 0, 135, 0);
+            button8.Padding = new Padding(20, 0, 0, 0);
             button8.Size = new Size(233, 40);
             button8.TabIndex = 1;
-            button8.Text = "button8";
+            button8.Text = "Managing Playlist";
+            button8.TextAlign = ContentAlignment.MiddleLeft;
             button8.UseVisualStyleBackColor = true;
             button8.Click += button8_Click;
             // 
@@ -240,10 +247,11 @@
             button9.ForeColor = Color.LightGray;
             button9.Location = new Point(0, 0);
             button9.Name = "button9";
-            button9.Padding = new Padding(0, 0, 135, 0);
+            button9.Padding = new Padding(20, 0, 0, 0);
             button9.Size = new Size(233, 40);
             button9.TabIndex = 0;
-            button9.Text = "button9";
+            button9.Text = "New Playlist";
+            button9.TextAlign = ContentAlignment.MiddleLeft;
             button9.UseVisualStyleBackColor = true;
             button9.Click += button9_Click;
             // 
@@ -266,6 +274,7 @@
             // 
             panelSideMenu.AutoScroll = true;
             panelSideMenu.BackColor = SystemColors.ActiveCaptionText;
+            panelSideMenu.Controls.Add(btnExit);
             panelSideMenu.Controls.Add(btnHelp);
             panelSideMenu.Controls.Add(panelToolsSubMenu);
             panelSideMenu.Controls.Add(btnTools);
@@ -278,7 +287,7 @@
             panelSideMenu.Dock = DockStyle.Left;
             panelSideMenu.Location = new Point(0, 0);
             panelSideMenu.Name = "panelSideMenu";
-            panelSideMenu.Size = new Size(250, 749);
+            panelSideMenu.Size = new Size(250, 534);
             panelSideMenu.TabIndex = 0;
             // 
             // btnHelp
@@ -287,7 +296,7 @@
             btnHelp.FlatAppearance.BorderSize = 0;
             btnHelp.FlatStyle = FlatStyle.Flat;
             btnHelp.ForeColor = Color.LightGray;
-            btnHelp.Location = new Point(0, 705);
+            btnHelp.Location = new Point(0, 664);
             btnHelp.Name = "btnHelp";
             btnHelp.Padding = new Padding(0, 0, 185, 0);
             btnHelp.Size = new Size(233, 45);
@@ -299,30 +308,14 @@
             // panelToolsSubMenu
             // 
             panelToolsSubMenu.BackColor = Color.FromArgb(64, 64, 64);
-            panelToolsSubMenu.Controls.Add(button12);
             panelToolsSubMenu.Controls.Add(button13);
             panelToolsSubMenu.Controls.Add(button14);
             panelToolsSubMenu.Controls.Add(button15);
             panelToolsSubMenu.Dock = DockStyle.Top;
             panelToolsSubMenu.Location = new Point(0, 540);
             panelToolsSubMenu.Name = "panelToolsSubMenu";
-            panelToolsSubMenu.Size = new Size(233, 165);
+            panelToolsSubMenu.Size = new Size(233, 124);
             panelToolsSubMenu.TabIndex = 7;
-            // 
-            // button12
-            // 
-            button12.Dock = DockStyle.Top;
-            button12.FlatAppearance.BorderSize = 0;
-            button12.FlatStyle = FlatStyle.Flat;
-            button12.ForeColor = Color.LightGray;
-            button12.Location = new Point(0, 120);
-            button12.Name = "button12";
-            button12.Padding = new Padding(0, 0, 135, 0);
-            button12.Size = new Size(233, 40);
-            button12.TabIndex = 3;
-            button12.Text = "button12";
-            button12.UseVisualStyleBackColor = true;
-            button12.Click += button12_Click;
             // 
             // button13
             // 
@@ -332,10 +325,11 @@
             button13.ForeColor = Color.LightGray;
             button13.Location = new Point(0, 80);
             button13.Name = "button13";
-            button13.Padding = new Padding(0, 0, 135, 0);
+            button13.Padding = new Padding(20, 0, 0, 0);
             button13.Size = new Size(233, 40);
             button13.TabIndex = 2;
-            button13.Text = "button13";
+            button13.Text = "Preferences";
+            button13.TextAlign = ContentAlignment.MiddleLeft;
             button13.UseVisualStyleBackColor = true;
             button13.Click += button13_Click;
             // 
@@ -347,10 +341,11 @@
             button14.ForeColor = Color.LightGray;
             button14.Location = new Point(0, 40);
             button14.Name = "button14";
-            button14.Padding = new Padding(0, 0, 135, 0);
+            button14.Padding = new Padding(20, 0, 0, 0);
             button14.Size = new Size(233, 40);
             button14.TabIndex = 1;
-            button14.Text = "button14";
+            button14.Text = "Effects and Filters";
+            button14.TextAlign = ContentAlignment.MiddleLeft;
             button14.UseVisualStyleBackColor = true;
             button14.Click += button14_Click;
             // 
@@ -362,10 +357,11 @@
             button15.ForeColor = Color.LightGray;
             button15.Location = new Point(0, 0);
             button15.Name = "button15";
-            button15.Padding = new Padding(0, 0, 135, 0);
+            button15.Padding = new Padding(20, 0, 0, 0);
             button15.Size = new Size(233, 40);
             button15.TabIndex = 0;
-            button15.Text = "button15";
+            button15.Text = "Media Converter";
+            button15.TextAlign = ContentAlignment.MiddleLeft;
             button15.UseVisualStyleBackColor = true;
             button15.Click += button15_Click;
             // 
@@ -388,19 +384,19 @@
             // 
             panelPlayer.BackColor = Color.FromArgb(64, 64, 64);
             panelPlayer.Dock = DockStyle.Bottom;
-            panelPlayer.Location = new Point(250, 649);
+            panelPlayer.Location = new Point(250, 434);
             panelPlayer.Name = "panelPlayer";
-            panelPlayer.Size = new Size(1120, 100);
+            panelPlayer.Size = new Size(492, 100);
             panelPlayer.TabIndex = 1;
             // 
             // panelChildForm
             // 
-            panelChildForm.BackColor = Color.DimGray;
+            panelChildForm.BackColor = SystemColors.GrayText;
             panelChildForm.Controls.Add(pictureBox1);
             panelChildForm.Dock = DockStyle.Fill;
             panelChildForm.Location = new Point(250, 0);
             panelChildForm.Name = "panelChildForm";
-            panelChildForm.Size = new Size(1120, 649);
+            panelChildForm.Size = new Size(492, 434);
             panelChildForm.TabIndex = 2;
             panelChildForm.Paint += panelChildForm_Paint;
             // 
@@ -408,17 +404,32 @@
             // 
             pictureBox1.Anchor = AnchorStyles.None;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(205, 52);
+            pictureBox1.Location = new Point(104, 47);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(662, 568);
+            pictureBox1.Size = new Size(347, 347);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            // 
+            // btnExit
+            // 
+            btnExit.Dock = DockStyle.Top;
+            btnExit.FlatAppearance.BorderSize = 0;
+            btnExit.FlatStyle = FlatStyle.Flat;
+            btnExit.ForeColor = Color.LightGray;
+            btnExit.Location = new Point(0, 709);
+            btnExit.Name = "btnExit";
+            btnExit.Padding = new Padding(0, 0, 185, 0);
+            btnExit.Size = new Size(233, 45);
+            btnExit.TabIndex = 9;
+            btnExit.Text = "Exit";
+            btnExit.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1370, 749);
+            ClientSize = new Size(742, 534);
             Controls.Add(panelChildForm);
             Controls.Add(panelPlayer);
             Controls.Add(panelSideMenu);
@@ -442,7 +453,7 @@
         private Button button5;
         private Button button4;
         private Button button3;
-        private Button button2;
+        private Button btnMediaOpenFiles;
         private Button button1;
         private Panel panelPlaylistSubMenu;
         private Button button6;
@@ -452,7 +463,6 @@
         private Button btnEqualizer;
         private Panel panelSideMenu;
         private Panel panelToolsSubMenu;
-        private Button button12;
         private Button button13;
         private Button button14;
         private Button button15;
@@ -461,5 +471,6 @@
         private Panel panelPlayer;
         private Panel panelChildForm;
         private PictureBox pictureBox1;
+        private Button btnExit;
     }
 }
