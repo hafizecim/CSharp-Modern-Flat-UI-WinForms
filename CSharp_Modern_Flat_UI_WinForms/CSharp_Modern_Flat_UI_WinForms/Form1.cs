@@ -42,7 +42,7 @@ namespace CSharp_Modern_Flat_UI_WinForms
             }
 
         }
-
+        // ------------ Panel Media Submenu Start ------------
         private void btnMedia_Click(object sender, EventArgs e)
         {
             showSubMenu(panelMediaSubmenu);
@@ -69,15 +69,14 @@ namespace CSharp_Modern_Flat_UI_WinForms
             hideSubMenu();
         }
 
+        // ------------ Panel Media Submenu End ------------
         private void panelLogo_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void btnTools_Click(object sender, EventArgs e)
-        {
-            showSubMenu(panelToolsSubMenu);
-        }
+
+        // ------------ Panel Playlist SubMenu Start ------------
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -103,13 +102,24 @@ namespace CSharp_Modern_Flat_UI_WinForms
         {
             hideSubMenu();
         }
+        // ------------ Panel Playlist SubMenu End ------------
 
+
+        // ------------ Equalizer Start ------------
         private void btnEqualizer_Click(object sender, EventArgs e)
         {
             openChildForm(new  Form3());
             hideSubMenu();
         }
+        // ------------ Equalizer End ------------
 
+
+        // ------------ Panel Tools SubMenu Start ------------
+
+        private void btnTools_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelToolsSubMenu);
+        }
         private void button15_Click(object sender, EventArgs e)
         {
             hideSubMenu();
@@ -129,11 +139,17 @@ namespace CSharp_Modern_Flat_UI_WinForms
         {
             hideSubMenu();
         }
+        // ------------ Panel Tools SubMenu End ------------
 
+
+        // ------------ Help Start ------------
         private void Help_Click(object sender, EventArgs e)
         {
             hideSubMenu();
         }
+
+        // ------------ Help End ------------
+
 
         private Form activeForm = null;
         private void openChildForm(Form childForm)
