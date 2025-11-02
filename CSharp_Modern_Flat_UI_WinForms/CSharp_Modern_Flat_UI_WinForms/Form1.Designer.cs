@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             panelLogo = new Panel();
             pictureBox2 = new PictureBox();
@@ -55,6 +56,7 @@
             panelPlayer = new Panel();
             panelChildForm = new Panel();
             pictureBox1 = new PictureBox();
+            contextMenuStrip1 = new ContextMenuStrip(components);
             panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panelMediaSubmenu.SuspendLayout();
@@ -67,6 +69,7 @@
             // 
             // panelLogo
             // 
+            panelLogo.BackColor = Color.FromArgb(11, 7, 17);
             panelLogo.Controls.Add(pictureBox2);
             panelLogo.Dock = DockStyle.Top;
             panelLogo.Location = new Point(0, 0);
@@ -87,6 +90,7 @@
             // 
             // btnMedia
             // 
+            btnMedia.BackColor = Color.FromArgb(11, 7, 17);
             btnMedia.BackgroundImageLayout = ImageLayout.None;
             btnMedia.Dock = DockStyle.Top;
             btnMedia.FlatAppearance.BorderSize = 0;
@@ -100,7 +104,7 @@
             btnMedia.TabIndex = 1;
             btnMedia.Text = "Media";
             btnMedia.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnMedia.UseVisualStyleBackColor = true;
+            btnMedia.UseVisualStyleBackColor = false;
             btnMedia.Click += btnMedia_Click;
             // 
             // panelMediaSubmenu
@@ -182,6 +186,7 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.FromArgb(11, 7, 17);
             button1.Dock = DockStyle.Top;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
@@ -194,7 +199,7 @@
             button1.TabIndex = 3;
             button1.Text = "Playlist Managentment";
             button1.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // panelPlaylistSubMenu
@@ -276,6 +281,7 @@
             // 
             // btnEqualizer
             // 
+            btnEqualizer.BackColor = Color.FromArgb(11, 7, 17);
             btnEqualizer.Dock = DockStyle.Top;
             btnEqualizer.FlatAppearance.BorderSize = 0;
             btnEqualizer.FlatStyle = FlatStyle.Flat;
@@ -288,13 +294,13 @@
             btnEqualizer.TabIndex = 5;
             btnEqualizer.Text = "Equalizer";
             btnEqualizer.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnEqualizer.UseVisualStyleBackColor = true;
+            btnEqualizer.UseVisualStyleBackColor = false;
             btnEqualizer.Click += btnEqualizer_Click;
             // 
             // panelSideMenu
             // 
             panelSideMenu.AutoScroll = true;
-            panelSideMenu.BackColor = SystemColors.ActiveCaptionText;
+            panelSideMenu.BackColor = Color.FromArgb(11, 7, 17);
             panelSideMenu.Controls.Add(btnHelp);
             panelSideMenu.Controls.Add(btnExit);
             panelSideMenu.Controls.Add(panelToolsSubMenu);
@@ -313,6 +319,7 @@
             // 
             // btnHelp
             // 
+            btnHelp.BackColor = Color.FromArgb(11, 7, 17);
             btnHelp.Dock = DockStyle.Top;
             btnHelp.FlatAppearance.BorderSize = 0;
             btnHelp.FlatStyle = FlatStyle.Flat;
@@ -325,10 +332,11 @@
             btnHelp.TabIndex = 9;
             btnHelp.Text = "Help";
             btnHelp.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnHelp.UseVisualStyleBackColor = true;
+            btnHelp.UseVisualStyleBackColor = false;
             // 
             // btnExit
             // 
+            btnExit.BackColor = Color.FromArgb(11, 7, 17);
             btnExit.Dock = DockStyle.Bottom;
             btnExit.FlatAppearance.BorderSize = 0;
             btnExit.FlatStyle = FlatStyle.Flat;
@@ -341,7 +349,7 @@
             btnExit.TabIndex = 8;
             btnExit.Text = "Exit";
             btnExit.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnExit.UseVisualStyleBackColor = true;
+            btnExit.UseVisualStyleBackColor = false;
             btnExit.Click += Help_Click;
             // 
             // panelToolsSubMenu
@@ -406,6 +414,7 @@
             // 
             // btnTools
             // 
+            btnTools.BackColor = Color.FromArgb(11, 7, 17);
             btnTools.Dock = DockStyle.Top;
             btnTools.FlatAppearance.BorderSize = 0;
             btnTools.FlatStyle = FlatStyle.Flat;
@@ -418,7 +427,7 @@
             btnTools.TabIndex = 6;
             btnTools.Text = "Tools";
             btnTools.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnTools.UseVisualStyleBackColor = true;
+            btnTools.UseVisualStyleBackColor = false;
             btnTools.Click += btnTools_Click;
             // 
             // panelPlayer
@@ -432,7 +441,7 @@
             // 
             // panelChildForm
             // 
-            panelChildForm.BackColor = Color.FromArgb(64, 64, 64);
+            panelChildForm.BackColor = Color.FromArgb(32, 30, 45);
             panelChildForm.Controls.Add(pictureBox1);
             panelChildForm.Dock = DockStyle.Fill;
             panelChildForm.Location = new Point(250, 0);
@@ -451,6 +460,11 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            // 
+            // contextMenuStrip1
+            // 
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(61, 4);
             // 
             // Form1
             // 
@@ -502,5 +516,6 @@
         private PictureBox pictureBox1;
         private Button btnHelp;
         private PictureBox pictureBox2;
+        private ContextMenuStrip contextMenuStrip1;
     }
 }
