@@ -32,23 +32,23 @@
             panelLogo = new Panel();
             btnMedia = new Button();
             panelMediaSubmenu = new Panel();
-            button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
+            btnMediaOpenRecent = new Button();
+            btnMediaOpenDisk = new Button();
+            btnMediaOpenFolder = new Button();
             btnMediaOpenFiles = new Button();
             button1 = new Button();
             panelPlaylistSubMenu = new Panel();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
-            button9 = new Button();
+            btnExportPlaylist = new Button();
+            btnImportPlaylist = new Button();
+            btnManagingPlaylist = new Button();
+            btnNewPlaylist = new Button();
             btnEqualizer = new Button();
             panelSideMenu = new Panel();
             btnHelp = new Button();
             panelToolsSubMenu = new Panel();
-            button13 = new Button();
-            button14 = new Button();
-            button15 = new Button();
+            btnToolsPreferences = new Button();
+            btnToolsEffectsandFilters = new Button();
+            btnToolsMediaConverter = new Button();
             btnTools = new Button();
             panelPlayer = new Panel();
             panelChildForm = new Panel();
@@ -89,9 +89,9 @@
             // panelMediaSubmenu
             // 
             panelMediaSubmenu.BackColor = Color.FromArgb(64, 64, 64);
-            panelMediaSubmenu.Controls.Add(button5);
-            panelMediaSubmenu.Controls.Add(button4);
-            panelMediaSubmenu.Controls.Add(button3);
+            panelMediaSubmenu.Controls.Add(btnMediaOpenRecent);
+            panelMediaSubmenu.Controls.Add(btnMediaOpenDisk);
+            panelMediaSubmenu.Controls.Add(btnMediaOpenFolder);
             panelMediaSubmenu.Controls.Add(btnMediaOpenFiles);
             panelMediaSubmenu.Dock = DockStyle.Top;
             panelMediaSubmenu.Location = new Point(0, 75);
@@ -99,53 +99,53 @@
             panelMediaSubmenu.Size = new Size(233, 165);
             panelMediaSubmenu.TabIndex = 2;
             // 
-            // button5
+            // btnMediaOpenRecent
             // 
-            button5.Dock = DockStyle.Top;
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.ForeColor = Color.LightGray;
-            button5.Location = new Point(0, 120);
-            button5.Name = "button5";
-            button5.Padding = new Padding(20, 0, 0, 0);
-            button5.Size = new Size(233, 40);
-            button5.TabIndex = 3;
-            button5.Text = "Open Recent Media";
-            button5.TextAlign = ContentAlignment.MiddleLeft;
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click;
+            btnMediaOpenRecent.Dock = DockStyle.Top;
+            btnMediaOpenRecent.FlatAppearance.BorderSize = 0;
+            btnMediaOpenRecent.FlatStyle = FlatStyle.Flat;
+            btnMediaOpenRecent.ForeColor = Color.LightGray;
+            btnMediaOpenRecent.Location = new Point(0, 120);
+            btnMediaOpenRecent.Name = "btnMediaOpenRecent";
+            btnMediaOpenRecent.Padding = new Padding(20, 0, 0, 0);
+            btnMediaOpenRecent.Size = new Size(233, 40);
+            btnMediaOpenRecent.TabIndex = 3;
+            btnMediaOpenRecent.Text = "Open Recent Media";
+            btnMediaOpenRecent.TextAlign = ContentAlignment.MiddleLeft;
+            btnMediaOpenRecent.UseVisualStyleBackColor = true;
+            btnMediaOpenRecent.Click += button5_Click;
             // 
-            // button4
+            // btnMediaOpenDisk
             // 
-            button4.Dock = DockStyle.Top;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.ForeColor = Color.LightGray;
-            button4.Location = new Point(0, 80);
-            button4.Name = "button4";
-            button4.Padding = new Padding(20, 0, 0, 0);
-            button4.Size = new Size(233, 40);
-            button4.TabIndex = 2;
-            button4.Text = "Open Disk";
-            button4.TextAlign = ContentAlignment.MiddleLeft;
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
+            btnMediaOpenDisk.Dock = DockStyle.Top;
+            btnMediaOpenDisk.FlatAppearance.BorderSize = 0;
+            btnMediaOpenDisk.FlatStyle = FlatStyle.Flat;
+            btnMediaOpenDisk.ForeColor = Color.LightGray;
+            btnMediaOpenDisk.Location = new Point(0, 80);
+            btnMediaOpenDisk.Name = "btnMediaOpenDisk";
+            btnMediaOpenDisk.Padding = new Padding(20, 0, 0, 0);
+            btnMediaOpenDisk.Size = new Size(233, 40);
+            btnMediaOpenDisk.TabIndex = 2;
+            btnMediaOpenDisk.Text = "Open Disk";
+            btnMediaOpenDisk.TextAlign = ContentAlignment.MiddleLeft;
+            btnMediaOpenDisk.UseVisualStyleBackColor = true;
+            btnMediaOpenDisk.Click += button4_Click;
             // 
-            // button3
+            // btnMediaOpenFolder
             // 
-            button3.Dock = DockStyle.Top;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.ForeColor = Color.LightGray;
-            button3.Location = new Point(0, 40);
-            button3.Name = "button3";
-            button3.Padding = new Padding(20, 0, 0, 0);
-            button3.Size = new Size(233, 40);
-            button3.TabIndex = 1;
-            button3.Text = "Open Folder";
-            button3.TextAlign = ContentAlignment.MiddleLeft;
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            btnMediaOpenFolder.Dock = DockStyle.Top;
+            btnMediaOpenFolder.FlatAppearance.BorderSize = 0;
+            btnMediaOpenFolder.FlatStyle = FlatStyle.Flat;
+            btnMediaOpenFolder.ForeColor = Color.LightGray;
+            btnMediaOpenFolder.Location = new Point(0, 40);
+            btnMediaOpenFolder.Name = "btnMediaOpenFolder";
+            btnMediaOpenFolder.Padding = new Padding(20, 0, 0, 0);
+            btnMediaOpenFolder.Size = new Size(233, 40);
+            btnMediaOpenFolder.TabIndex = 1;
+            btnMediaOpenFolder.Text = "Open Folder";
+            btnMediaOpenFolder.TextAlign = ContentAlignment.MiddleLeft;
+            btnMediaOpenFolder.UseVisualStyleBackColor = true;
+            btnMediaOpenFolder.Click += button3_Click;
             // 
             // btnMediaOpenFiles
             // 
@@ -181,79 +181,79 @@
             // panelPlaylistSubMenu
             // 
             panelPlaylistSubMenu.BackColor = Color.FromArgb(64, 64, 64);
-            panelPlaylistSubMenu.Controls.Add(button6);
-            panelPlaylistSubMenu.Controls.Add(button7);
-            panelPlaylistSubMenu.Controls.Add(button8);
-            panelPlaylistSubMenu.Controls.Add(button9);
+            panelPlaylistSubMenu.Controls.Add(btnExportPlaylist);
+            panelPlaylistSubMenu.Controls.Add(btnImportPlaylist);
+            panelPlaylistSubMenu.Controls.Add(btnManagingPlaylist);
+            panelPlaylistSubMenu.Controls.Add(btnNewPlaylist);
             panelPlaylistSubMenu.Dock = DockStyle.Top;
             panelPlaylistSubMenu.Location = new Point(0, 285);
             panelPlaylistSubMenu.Name = "panelPlaylistSubMenu";
             panelPlaylistSubMenu.Size = new Size(233, 165);
             panelPlaylistSubMenu.TabIndex = 4;
             // 
-            // button6
+            // btnExportPlaylist
             // 
-            button6.Dock = DockStyle.Top;
-            button6.FlatAppearance.BorderSize = 0;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.ForeColor = Color.LightGray;
-            button6.Location = new Point(0, 120);
-            button6.Name = "button6";
-            button6.Padding = new Padding(20, 0, 0, 0);
-            button6.Size = new Size(233, 40);
-            button6.TabIndex = 3;
-            button6.Text = "Export Playlist";
-            button6.TextAlign = ContentAlignment.MiddleLeft;
-            button6.UseVisualStyleBackColor = true;
-            button6.Click += button6_Click;
+            btnExportPlaylist.Dock = DockStyle.Top;
+            btnExportPlaylist.FlatAppearance.BorderSize = 0;
+            btnExportPlaylist.FlatStyle = FlatStyle.Flat;
+            btnExportPlaylist.ForeColor = Color.LightGray;
+            btnExportPlaylist.Location = new Point(0, 120);
+            btnExportPlaylist.Name = "btnExportPlaylist";
+            btnExportPlaylist.Padding = new Padding(20, 0, 0, 0);
+            btnExportPlaylist.Size = new Size(233, 40);
+            btnExportPlaylist.TabIndex = 3;
+            btnExportPlaylist.Text = "Export Playlist";
+            btnExportPlaylist.TextAlign = ContentAlignment.MiddleLeft;
+            btnExportPlaylist.UseVisualStyleBackColor = true;
+            btnExportPlaylist.Click += button6_Click;
             // 
-            // button7
+            // btnImportPlaylist
             // 
-            button7.Dock = DockStyle.Top;
-            button7.FlatAppearance.BorderSize = 0;
-            button7.FlatStyle = FlatStyle.Flat;
-            button7.ForeColor = Color.LightGray;
-            button7.Location = new Point(0, 80);
-            button7.Name = "button7";
-            button7.Padding = new Padding(20, 0, 0, 0);
-            button7.Size = new Size(233, 40);
-            button7.TabIndex = 2;
-            button7.Text = "Import Playlist";
-            button7.TextAlign = ContentAlignment.MiddleLeft;
-            button7.UseVisualStyleBackColor = true;
-            button7.Click += button7_Click;
+            btnImportPlaylist.Dock = DockStyle.Top;
+            btnImportPlaylist.FlatAppearance.BorderSize = 0;
+            btnImportPlaylist.FlatStyle = FlatStyle.Flat;
+            btnImportPlaylist.ForeColor = Color.LightGray;
+            btnImportPlaylist.Location = new Point(0, 80);
+            btnImportPlaylist.Name = "btnImportPlaylist";
+            btnImportPlaylist.Padding = new Padding(20, 0, 0, 0);
+            btnImportPlaylist.Size = new Size(233, 40);
+            btnImportPlaylist.TabIndex = 2;
+            btnImportPlaylist.Text = "Import Playlist";
+            btnImportPlaylist.TextAlign = ContentAlignment.MiddleLeft;
+            btnImportPlaylist.UseVisualStyleBackColor = true;
+            btnImportPlaylist.Click += button7_Click;
             // 
-            // button8
+            // btnManagingPlaylist
             // 
-            button8.Dock = DockStyle.Top;
-            button8.FlatAppearance.BorderSize = 0;
-            button8.FlatStyle = FlatStyle.Flat;
-            button8.ForeColor = Color.LightGray;
-            button8.Location = new Point(0, 40);
-            button8.Name = "button8";
-            button8.Padding = new Padding(20, 0, 0, 0);
-            button8.Size = new Size(233, 40);
-            button8.TabIndex = 1;
-            button8.Text = "Managing Playlist";
-            button8.TextAlign = ContentAlignment.MiddleLeft;
-            button8.UseVisualStyleBackColor = true;
-            button8.Click += button8_Click;
+            btnManagingPlaylist.Dock = DockStyle.Top;
+            btnManagingPlaylist.FlatAppearance.BorderSize = 0;
+            btnManagingPlaylist.FlatStyle = FlatStyle.Flat;
+            btnManagingPlaylist.ForeColor = Color.LightGray;
+            btnManagingPlaylist.Location = new Point(0, 40);
+            btnManagingPlaylist.Name = "btnManagingPlaylist";
+            btnManagingPlaylist.Padding = new Padding(20, 0, 0, 0);
+            btnManagingPlaylist.Size = new Size(233, 40);
+            btnManagingPlaylist.TabIndex = 1;
+            btnManagingPlaylist.Text = "Managing Playlist";
+            btnManagingPlaylist.TextAlign = ContentAlignment.MiddleLeft;
+            btnManagingPlaylist.UseVisualStyleBackColor = true;
+            btnManagingPlaylist.Click += button8_Click;
             // 
-            // button9
+            // btnNewPlaylist
             // 
-            button9.Dock = DockStyle.Top;
-            button9.FlatAppearance.BorderSize = 0;
-            button9.FlatStyle = FlatStyle.Flat;
-            button9.ForeColor = Color.LightGray;
-            button9.Location = new Point(0, 0);
-            button9.Name = "button9";
-            button9.Padding = new Padding(20, 0, 0, 0);
-            button9.Size = new Size(233, 40);
-            button9.TabIndex = 0;
-            button9.Text = "New Playlist";
-            button9.TextAlign = ContentAlignment.MiddleLeft;
-            button9.UseVisualStyleBackColor = true;
-            button9.Click += button9_Click;
+            btnNewPlaylist.Dock = DockStyle.Top;
+            btnNewPlaylist.FlatAppearance.BorderSize = 0;
+            btnNewPlaylist.FlatStyle = FlatStyle.Flat;
+            btnNewPlaylist.ForeColor = Color.LightGray;
+            btnNewPlaylist.Location = new Point(0, 0);
+            btnNewPlaylist.Name = "btnNewPlaylist";
+            btnNewPlaylist.Padding = new Padding(20, 0, 0, 0);
+            btnNewPlaylist.Size = new Size(233, 40);
+            btnNewPlaylist.TabIndex = 0;
+            btnNewPlaylist.Text = "New Playlist";
+            btnNewPlaylist.TextAlign = ContentAlignment.MiddleLeft;
+            btnNewPlaylist.UseVisualStyleBackColor = true;
+            btnNewPlaylist.Click += button9_Click;
             // 
             // btnEqualizer
             // 
@@ -308,62 +308,62 @@
             // panelToolsSubMenu
             // 
             panelToolsSubMenu.BackColor = Color.FromArgb(64, 64, 64);
-            panelToolsSubMenu.Controls.Add(button13);
-            panelToolsSubMenu.Controls.Add(button14);
-            panelToolsSubMenu.Controls.Add(button15);
+            panelToolsSubMenu.Controls.Add(btnToolsPreferences);
+            panelToolsSubMenu.Controls.Add(btnToolsEffectsandFilters);
+            panelToolsSubMenu.Controls.Add(btnToolsMediaConverter);
             panelToolsSubMenu.Dock = DockStyle.Top;
             panelToolsSubMenu.Location = new Point(0, 540);
             panelToolsSubMenu.Name = "panelToolsSubMenu";
             panelToolsSubMenu.Size = new Size(233, 124);
             panelToolsSubMenu.TabIndex = 7;
             // 
-            // button13
+            // btnToolsPreferences
             // 
-            button13.Dock = DockStyle.Top;
-            button13.FlatAppearance.BorderSize = 0;
-            button13.FlatStyle = FlatStyle.Flat;
-            button13.ForeColor = Color.LightGray;
-            button13.Location = new Point(0, 80);
-            button13.Name = "button13";
-            button13.Padding = new Padding(20, 0, 0, 0);
-            button13.Size = new Size(233, 40);
-            button13.TabIndex = 2;
-            button13.Text = "Preferences";
-            button13.TextAlign = ContentAlignment.MiddleLeft;
-            button13.UseVisualStyleBackColor = true;
-            button13.Click += button13_Click;
+            btnToolsPreferences.Dock = DockStyle.Top;
+            btnToolsPreferences.FlatAppearance.BorderSize = 0;
+            btnToolsPreferences.FlatStyle = FlatStyle.Flat;
+            btnToolsPreferences.ForeColor = Color.LightGray;
+            btnToolsPreferences.Location = new Point(0, 80);
+            btnToolsPreferences.Name = "btnToolsPreferences";
+            btnToolsPreferences.Padding = new Padding(20, 0, 0, 0);
+            btnToolsPreferences.Size = new Size(233, 40);
+            btnToolsPreferences.TabIndex = 2;
+            btnToolsPreferences.Text = "Preferences";
+            btnToolsPreferences.TextAlign = ContentAlignment.MiddleLeft;
+            btnToolsPreferences.UseVisualStyleBackColor = true;
+            btnToolsPreferences.Click += button13_Click;
             // 
-            // button14
+            // btnToolsEffectsandFilters
             // 
-            button14.Dock = DockStyle.Top;
-            button14.FlatAppearance.BorderSize = 0;
-            button14.FlatStyle = FlatStyle.Flat;
-            button14.ForeColor = Color.LightGray;
-            button14.Location = new Point(0, 40);
-            button14.Name = "button14";
-            button14.Padding = new Padding(20, 0, 0, 0);
-            button14.Size = new Size(233, 40);
-            button14.TabIndex = 1;
-            button14.Text = "Effects and Filters";
-            button14.TextAlign = ContentAlignment.MiddleLeft;
-            button14.UseVisualStyleBackColor = true;
-            button14.Click += button14_Click;
+            btnToolsEffectsandFilters.Dock = DockStyle.Top;
+            btnToolsEffectsandFilters.FlatAppearance.BorderSize = 0;
+            btnToolsEffectsandFilters.FlatStyle = FlatStyle.Flat;
+            btnToolsEffectsandFilters.ForeColor = Color.LightGray;
+            btnToolsEffectsandFilters.Location = new Point(0, 40);
+            btnToolsEffectsandFilters.Name = "btnToolsEffectsandFilters";
+            btnToolsEffectsandFilters.Padding = new Padding(20, 0, 0, 0);
+            btnToolsEffectsandFilters.Size = new Size(233, 40);
+            btnToolsEffectsandFilters.TabIndex = 1;
+            btnToolsEffectsandFilters.Text = "Effects and Filters";
+            btnToolsEffectsandFilters.TextAlign = ContentAlignment.MiddleLeft;
+            btnToolsEffectsandFilters.UseVisualStyleBackColor = true;
+            btnToolsEffectsandFilters.Click += button14_Click;
             // 
-            // button15
+            // btnToolsMediaConverter
             // 
-            button15.Dock = DockStyle.Top;
-            button15.FlatAppearance.BorderSize = 0;
-            button15.FlatStyle = FlatStyle.Flat;
-            button15.ForeColor = Color.LightGray;
-            button15.Location = new Point(0, 0);
-            button15.Name = "button15";
-            button15.Padding = new Padding(20, 0, 0, 0);
-            button15.Size = new Size(233, 40);
-            button15.TabIndex = 0;
-            button15.Text = "Media Converter";
-            button15.TextAlign = ContentAlignment.MiddleLeft;
-            button15.UseVisualStyleBackColor = true;
-            button15.Click += button15_Click;
+            btnToolsMediaConverter.Dock = DockStyle.Top;
+            btnToolsMediaConverter.FlatAppearance.BorderSize = 0;
+            btnToolsMediaConverter.FlatStyle = FlatStyle.Flat;
+            btnToolsMediaConverter.ForeColor = Color.LightGray;
+            btnToolsMediaConverter.Location = new Point(0, 0);
+            btnToolsMediaConverter.Name = "btnToolsMediaConverter";
+            btnToolsMediaConverter.Padding = new Padding(20, 0, 0, 0);
+            btnToolsMediaConverter.Size = new Size(233, 40);
+            btnToolsMediaConverter.TabIndex = 0;
+            btnToolsMediaConverter.Text = "Media Converter";
+            btnToolsMediaConverter.TextAlign = ContentAlignment.MiddleLeft;
+            btnToolsMediaConverter.UseVisualStyleBackColor = true;
+            btnToolsMediaConverter.Click += button15_Click;
             // 
             // btnTools
             // 
@@ -450,22 +450,22 @@
         private Panel panelLogo;
         private Button btnMedia;
         private Panel panelMediaSubmenu;
-        private Button button5;
-        private Button button4;
-        private Button button3;
+        private Button btnMediaOpenRecent;
+        private Button btnMediaOpenDisk;
+        private Button btnMediaOpenFolder;
         private Button btnMediaOpenFiles;
         private Button button1;
         private Panel panelPlaylistSubMenu;
-        private Button button6;
-        private Button button7;
-        private Button button8;
-        private Button button9;
+        private Button btnExportPlaylist;
+        private Button btnImportPlaylist;
+        private Button btnManagingPlaylist;
+        private Button btnNewPlaylist;
         private Button btnEqualizer;
         private Panel panelSideMenu;
         private Panel panelToolsSubMenu;
-        private Button button13;
-        private Button button14;
-        private Button button15;
+        private Button btnToolsPreferences;
+        private Button btnToolsEffectsandFilters;
+        private Button btnToolsMediaConverter;
         private Button btnTools;
         private Button btnHelp;
         private Panel panelPlayer;
